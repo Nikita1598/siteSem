@@ -1,0 +1,519 @@
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/coast-540123_1920.jpg");
+    color: white;
+    overflow-x: hidden;
+}
+
+.content {
+    height: 200%;
+}
+
+.main_text {
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    text-align: center;
+    background: rgba(129, 129, 129, 0.45);
+}
+
+.footer {
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+    height: 70px;
+    width: 100%;
+    background: #343a40;
+}
+
+#number1 {
+    width: 300px;
+}
+
+#form_rebus {
+    position: relative;
+    top: 200px;
+    left: 30%;
+}
+
+#subset_form {
+    position: relative;
+    top: 200px;
+    left: 30%;
+}
+
+#text{
+    width: 300px;
+}
+
+.page {
+    color: white;
+    font-size: 20px;
+}
+
+.page:hover {
+    color: white;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px white;
+}
+
+#csv_table {
+    position: relative;
+    left: 500px;
+    font-size: 20px;
+    top: 70px;
+    margin-bottom: 100px;
+}
+
+#pages_1 {
+    position: relative;
+    left: 630px;
+    top: 40px;
+
+}
+
+#pages_2 {
+    position: relative;
+    top: 0;
+    margin-bottom: 100px;
+    left: 630px;
+}
+
+#select {
+    position: relative;
+    left: 680px;
+    top: 30px;
+}
+
+#form_csv {
+    position: relative;
+    left: 580px;
+    top: 150px;
+}
+
+#form_chat {
+    font-family: Impact;
+    padding: 20px;
+    color: black;
+    background: white;
+    border: 1px solid black;
+    border-radius: 50px;
+    width: 500px;
+    position: absolute;
+    left: 1000px;
+    top: 200px;
+    z-index: 1;
+}
+
+#name_2 {
+    width: 450px;
+}
+
+#message {
+    width: 450px;
+    resize: none;
+    height: 100px;
+}
+
+#button_message {
+    position: relative;
+    left: 140px;
+    width: 150px;
+    height: 50px;
+    margin: 20px;
+    background: white;
+    border: 1px solid black;
+    transition: 0.1s;
+}
+
+#button_message:hover {
+    cursor: pointer;
+    background: black;
+    color: white;
+}
+
+#new_message {
+    color: white;
+    font-family: Impact;
+    font-size: 25px;
+    position: absolute;
+    left: 1100px;
+    top: 160px;
+}
+
+#form_chat_log_in {
+    font-family: Impact;
+    font-size: 17px;
+    position: relative;
+    left: 700px;
+    top: 150px;
+}
+
+#log_in {
+    margin: 20px 0;
+}
+
+#received_message {
+    font-family: Impact;
+    font-size: 18px;
+}
+
+#message_to {
+    font-family: Impact;
+    position: absolute;
+    font-size: 20px;
+    top: 200px;
+    left: 50px;
+}
+
+#no_message {
+    position: absolute;
+    top: 250px;
+    left: 100px;
+    color: red;
+}
+
+#error_message_2 {
+    color: red;
+    font-family: Impact;
+    position: absolute;
+    left: 1140px;
+    top: 535px;
+    z-index: 2;
+}
+
+
+.message {
+    color: black;
+    background: white;
+    position: relative;
+    margin-top: 2%;
+    margin-left: 5%;
+    width: 30%;
+    border-radius: 20px;
+}
+
+span.message_to {
+    color: black;
+    position: relative;
+    left: 26px;
+    top: 10px;
+}
+
+.message_content{
+    color: black;
+    position: relative;
+    left: 26px;
+}
+
+#received_message {
+    position: relative;
+    top: 80px;
+    margin-bottom: 200px;
+}
+
+#name_user {
+    right: 0;
+}
+
+#auth {
+    position: absolute;
+    right: 0;
+    margin-right: 120px;
+}
+
+#auth:hover {
+    cursor: pointer;
+}
+
+#registration {
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+}
+
+#registration:hover {
+    cursor: pointer;
+}
+
+#background_auth_form {
+    display: none;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(49, 49, 49, 0.8);
+}
+
+#background_registration_form{
+    display: none;
+    z-index: 1;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(49, 49, 49, 0.8);
+}
+
+.auth_form {
+    border-radius: 30px;
+    background: white;
+    position: fixed;
+    top: 15%;
+    left: 35%;
+    width: 30%;
+    height: 70%;
+}
+
+.registration_form {
+    border-radius: 30px;
+    background: white;
+    position: fixed;
+    top: 5%;
+    left: 35%;
+    width: 30%;
+    height: 90%;
+    z-index: 1;
+}
+
+.registration_form > form > .form-group{
+    width: 90%;
+    position: relative;
+    color: black;
+    font-family: Impact;
+    top: 85px;
+    left: 5%;
+    font-size: 25px;
+}
+
+.auth_p {
+    position: fixed;
+    color: black;
+    font-family: Impact;
+    font-size: 50px;
+    top: 19%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.registration_p {
+    position: fixed;
+    color: black;
+    font-family: Impact;
+    font-size: 50px;
+    top: 7%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.form-group {
+    width: 90%;
+    position: relative;
+    color: black;
+    font-family: Impact;
+    top: 141px;
+    left: 5%;
+    font-size: 25px;
+}
+
+.form-group > label {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    left: 0;
+}
+
+.form-group > input {
+    margin-top: 2%;
+    font-size: 25px;
+}
+
+.registration_form > form > div.btn.btn-primary {
+    position: relative;
+    top: 120px;
+    left: 80px;
+    width: 300px;
+    font-size: 25px;
+}
+
+div.btn.btn-primary {
+    position: relative;
+    top: 180px;
+    left: 130px;
+    width: 200px;
+    font-size: 25px;
+}
+
+div.btn.btn-primary:hover {
+    box-shadow: 0 0 8px 4px #0077ff9c;
+    cursor: pointer;
+}
+
+i.fas.fa-times {
+    position: fixed;
+    color: lightgray;
+    font-size: 35px;
+    left: 61%;
+    top: 17%;
+}
+
+.registration_p + i.fas.fa-times {
+    position: fixed;
+    color: lightgray;
+    font-size: 35px;
+    left: 61%;
+    top: 8%;
+}
+
+i.fas.fa-times:hover {
+    text-shadow: 0 3px 2px lightgrey;
+    cursor: pointer;
+    color: gray;
+}
+
+#error_message {
+    color: red;
+    font-family: Impact;
+    font-size: 25px;
+    position: fixed;
+    top: 65%;
+    width: 26%;
+    left: 37%;
+    text-align: center;
+}
+
+#need_to_auth{
+    color: white;
+    position: absolute;
+    font-family: Impact;
+    font-size: 40px;
+    top: 45%;
+    text-align: center;
+    width: 100%;
+}
+
+#simple_table{
+    border-color: white;
+    position: relative;
+    left: 27%;
+}
+
+#error_message_reg{
+    color: red;
+    font-size: 25px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 82%;
+    font-family: Impact;
+}
+
+.page_chat{
+    position: absolute;
+    top: -60px;
+    left: 500px;
+}
+
+.page_chat_2{
+    color: white;
+    text-decoration: none;
+    padding-left: 15px;
+}
+
+.page_chat_2:hover{
+    color: white;
+    text-decoration: none;
+}
+
+#graph_table{
+    position: relative;
+    left: 10%;
+    border: 3px solid white;
+}
+
+#graph_table>tbody>tr>td{
+    padding: 10px;
+}
+
+th{
+    padding: 10px;
+    font-size: 20px;
+}
+
+caption{
+    caption-side: top;
+    color: white;
+    text-align: center;
+}
+
+#graph_form{
+    position: relative;
+    top: -190px;
+    float: right;
+    left: -400px;
+}
+
+#graph_form>label{
+    position: absolute;
+    top: -30px;
+}
+
+#graph_form>input{
+    width: 180px;
+}
+
+#graph_form>input[type=submit]{
+    position: absolute;
+    top: 60px;
+    width: 250px;
+    left: 80px;
+}
+
+#graph_form>input[type=submit]:hover{
+    cursor: pointer;
+}
+
+input#to {
+    left: 30px;
+    position: relative;
+}
+
+#to_label {
+    left: 215px;
+}
+
+#from_to {
+    position: absolute;
+    font-size: 20px;
+    color: yellow;
+    left: 850px;
+    top: 165px;
+}
+
+#weight {
+    position: absolute;
+    font-size: 20px;
+    color: yellow;
+    left: 860px;
+    top: 205px;
+}
+
+#way {
+    position: absolute;
+    font-size: 20px;
+    color: yellow;
+    left: 910px;
+    top: 215px;
+}
+
+#delete_file{
+    position: relative;
+    left: 140px;
+    top: 30px;
+}
+
+#graph_image{
+    position: relative;
+    left: 40%;
+    margin-bottom:100px;
+}
